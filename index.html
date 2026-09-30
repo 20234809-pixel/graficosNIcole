@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#ffb2b7","surface-tint":"#b81059","on-tertiary-container":"#ffd5de","surface":"#fff8f7","error":"#ba1a1a","secondary-fixed":"#ffdadb","inverse-surface":"#5e1425","surface-bright":"#fff8f7","on-secondary-fixed-variant":"#92002a","surface-container-low":"#fff0f1","surface-variant":"#ffd9dd","on-surface":"#400012","primary":"#970046","surface-dim":"#ffced3","on-primary-fixed":"#3f0019","outline-variant":"#e0bec4","inverse-primary":"#ffb1c3","surface-container-highest":"#ffd9dd","on-primary-container":"#ffd5dd","primary-fixed":"#ffd9e0","on-tertiary-fixed-variant":"#861a45","tertiary":"#8c2049","on-surface-variant":"#594046","secondary-container":"#dc2c4f","on-secondary":"#ffffff","inverse-on-surface":"#ffeced","on-primary-fixed-variant":"#8f0042","surface-container":"#ffe9ea","primary-fixed-dim":"#ffb1c3","on-tertiary-fixed":"#3f001a","surface-container-high":"#ffe1e3","on-secondary-fixed":"#40000d","background":"#fff8f7","outline":"#8d7075","on-error-container":"#93000a","error-container":"#ffdad6","on-error":"#ffffff","on-secondary-container":"#fffbff","primary-container":"#be185d","surface-container-lowest":"#ffffff","tertiary-container":"#ab3961","on-primary":"#ffffff","secondary":"#b90538","on-background":"#400012","on-tertiary":"#ffffff","tertiary-fixed-dim":"#ffb1c5","tertiary-fixed":"#ffd9e1"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","space-md":"1rem","space-2xl":"3rem","margin-desktop":"2rem","gutter":"1.25rem","space-xl":"2rem","space-sm":"0.5rem","space-xs":"0.25rem","margin":"1.25rem","gutter-desktop":"1.5rem"},"fontFamily":{"body-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Space Grotesk"],"label-md":["Space Grotesk"],"display-lg":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"headline-md":["Space Grotesk"],"title-md":["Plus Jakarta Sans"],"display-lg-mobile":["Space Grotesk"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Space Grotesk"],"tabular-data":["Space Grotesk"],"headline-sm":["Space Grotesk"]},"fontSize":{"body-md":["13px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"display-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-lg-mobile":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"title-md":["15px",{"lineHeight":"22px","fontWeight":"600"}],"display-lg-mobile":["30px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"tabular-data":["13px",{"lineHeight":"18px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between py-space-lg px-space-md"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-[0_4px_20px_-2px_rgba(190,24,93,0.15)]"><span class="material-symbols-outlined text-[20px]">hub</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">RoseRFM</span><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Analytics Studio</span></div></div><div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-[0_2px_8px_rgba(190,24,93,0.04)] flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Workspace Activo</span><div class="flex items-center gap-space-xs text-on-surface font-title-md text-title-md truncate"><span class="material-symbols-outlined text-primary text-[18px]">description</span><span class="truncate">retail_sales_dataset.csv</span></div><div class="mt-space-xs inline-flex items-center gap-space-xs px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm w-fit"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span>Pipeline Listo</span></div></div><div class="flex flex-col gap-space-xs"><span class="px-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Métricas Clave (KPIs)</span><div class="grid grid-cols-1 gap-space-xs"><div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-[0_1px_4px_rgba(190,24,93,0.03)]"><div><span class="block font-label-sm text-label-sm text-on-surface-variant">Total Clientes</span><span class="font-tabular-data text-tabular-data font-bold text-on-surface">500</span></div><span class="material-symbols-outlined text-outline-variant text-[20px]">group</span></div><div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-[0_1px_4px_rgba(190,24,93,0.03)]"><div><span class="block font-label-sm text-label-sm text-on-surface-variant">Transacciones</span><span class="font-tabular-data text-tabular-data font-bold text-on-surface">1,000</span></div><span class="material-symbols-outlined text-outline-variant text-[20px]">receipt_long</span></div><div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-[0_1px_4px_rgba(190,24,93,0.03)]"><div><span class="block font-label-sm text-label-sm text-on-surface-variant">Ticket Promedio</span><span class="font-tabular-data text-tabular-data font-bold text-primary">$258.40</span></div><span class="material-symbols-outlined text-outline-variant text-[20px]">payments</span></div><div class="p-space-sm rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-between"><div><span class="block font-label-sm text-label-sm text-on-surface-variant">Segmento Líder</span><span class="font-label-md text-label-md font-bold text-primary">Big Spenders</span></div><span class="material-symbols-outlined text-primary text-[20px]">stars</span></div></div></div></div><div class="flex flex-col gap-space-sm"><div class="p-space-sm bg-surface-container rounded-xl flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[22px]">cloud_done</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold">Motor RFM 3.2</span><span class="font-body-sm text-body-sm text-on-surface-variant">K-Means Ajustado (k=4)</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] z-40 px-gutter-desktop"><div class="h-20 w-full flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full max-w-sm"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-2 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-[0_1px_4px_rgba(190,24,93,0.04)]" placeholder="Buscar registros, clientes, clusters..." type="text"/></div><div class="inline-flex items-center gap-space-xs px-3 py-2 bg-surface-container-lowest rounded-lg text-on-surface-variant font-label-sm text-label-sm shadow-[0_1px_4px_rgba(190,24,93,0.04)]"><span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span><span>Últimos 12 Meses</span></div></div><div class="flex items-center gap-space-sm"><button class="inline-flex items-center gap-space-xs px-3.5 py-2 rounded-lg bg-surface-container-highest text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">upload_file</span><span>Subir CSV/Excel</span></button><button class="inline-flex items-center gap-space-xs px-3.5 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-[0_2px_8px_rgba(151,0,70,0.2)] hover:bg-primary-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">download</span><span>Exportar Informe</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs shadow-[0_2px_6px_rgba(151,0,70,0.2)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="fixed top-20 left-72 right-0 h-12 bg-surface/90 backdrop-blur-md z-30 px-gutter-desktop shadow-[0_1px_4px_rgba(0,0,0,0.02)] flex items-center"><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="px-3.5 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-path="vista-de-tabla-y-datos" href="#">Vista de Tabla &amp; Datos</a><a class="px-3.5 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-path="analisis-rfm" href="#">Análisis RFM</a><a class="px-3.5 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-path="clusters-kmeans" href="#">Clusters KMeans</a><a class="px-3.5 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-path="graficos-y-distribucion" href="#">Gráficos &amp; Distribución</a></nav></div><main class="relative pt-32 w-full px-gutter-desktop pb-space-2xl min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Top Section: Asymmetric Header & Formula Engine Overview -->
+<section class="w-full mb-space-xl">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm mb-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Segmentación Cuantílica (.25, .50, .75)</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Cálculo &amp; Ponderación RFM</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Normalización de variables comportamentales para 500 cuentas de cliente con base en distribuciones empíricas de frecuencia de compra, latencia y volumen monetario agregado.
+        </p>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-space-sm self-start lg:self-auto">
+<div class="bg-surface-container-lowest shadow-sm rounded-lg p-1 flex items-center gap-1">
+<button class="px-3 py-1.5 rounded bg-primary text-on-primary font-label-sm text-label-sm shadow-sm transition-all" type="button">Quantiles (4 Splits)</button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" type="button">Quintiles (5 Splits)</button>
+</div>
+<button class="h-9 w-9 flex items-center justify-center rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container shadow-sm transition-colors" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+</div>
+</div>
+<!-- Mathematical Formula Tiles & Quantiles Matrix -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Recency Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="absolute -right-3 -top-3 w-16 h-16 bg-surface-container-high rounded-full opacity-40 blur-lg group-hover:scale-125 transition-transform"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Recency (R)</span>
+<span class="material-symbols-outlined text-primary text-[20px]">history_toggle_off</span>
+</div>
+<div class="font-tabular-data text-tabular-data text-on-surface font-semibold bg-surface-container-low px-2 py-1 rounded inline-block mb-space-xs text-[11px]">
+            f(t) = max(date) - last_order
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Días transcurridos desde el último registro de compra.</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<div class="flex items-center justify-between text-[11px] font-label-sm text-on-surface-variant mb-1">
+<span>Quantiles calculados</span>
+<span class="font-semibold text-primary">Inverso (Menor = Mejor)</span>
+</div>
+<div class="grid grid-cols-3 gap-1 text-center">
+<div class="bg-surface-container py-1 rounded">
+<span class="block text-[10px] text-on-surface-variant">Q25</span>
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">15d</span>
+</div>
+<div class="bg-surface-container py-1 rounded">
+<span class="block text-[10px] text-on-surface-variant">Q50</span>
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">38d</span>
+</div>
+<div class="bg-surface-container-highest py-1 rounded">
+<span class="block text-[10px] text-primary font-semibold">Q75</span>
+<span class="font-tabular-data text-[12px] font-bold text-primary">72d</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Frequency Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="absolute -right-3 -top-3 w-16 h-16 bg-surface-container-high rounded-full opacity-40 blur-lg group-hover:scale-125 transition-transform"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Frequency (F)</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">repeat</span>
+</div>
+<div class="font-tabular-data text-tabular-data text-on-surface font-semibold bg-surface-container-low px-2 py-1 rounded inline-block mb-space-xs text-[11px]">
+            n = count(tx_id)
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Volumen total de transacciones completadas.</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<div class="flex items-center justify-between text-[11px] font-label-sm text-on-surface-variant mb-1">
+<span>Quantiles calculados</span>
+<span class="font-semibold text-secondary">Directo</span>
+</div>
+<div class="grid grid-cols-3 gap-1 text-center">
+<div class="bg-surface-container py-1 rounded">
+<span class="block text-[10px] text-on-surface-variant">Q25</span>
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">1 tx</span>
+</div>
+<div class="bg-surface-container py-1 rounded">
+<span class="block text-[10px] text-on-surface-variant">Q50</span>
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">2 tx</span>
+</div>
+<div class="bg-surface-container-highest py-1 rounded">
+<span class="block text-[10px] text-secondary font-semibold">Q75</span>
+<span class="font-tabular-data text-[12px] font-bold text-secondary">4 tx</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Monetary Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="absolute -right-3 -top-3 w-16 h-16 bg-surface-container-high rounded-full opacity-40 blur-lg group-hover:scale-125 transition-transform"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Monetary (M)</span>
+<span class="material-symbols-outlined text-primary text-[20px]">account_balance_wallet</span>
+</div>
+<div class="font-tabular-data text-tabular-data text-on-surface font-semibold bg-surface-container-low px-2 py-1 rounded inline-block mb-space-xs text-[11px]">
+            LTV = sum(total_amount)
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Gasto total acumulado por el comprador ($USD).</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<div class="flex items-center justify-between text-[11px] font-label-sm text-on-surface-variant mb-1">
+<span>Quantiles calculados</span>
+<span class="font-semibold text-primary">Directo</span>
+</div>
+<div class="grid grid-cols-3 gap-1 text-center">
+<div class="bg-surface-container py-1 rounded">
+<span class="block text-[10px] text-on-surface-variant">Q25</span>
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$350</span>
+</div>
+<div class="bg-surface-container py-1 rounded">
+<span class="block text-[10px] text-on-surface-variant">Q50</span>
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$820</span>
+</div>
+<div class="bg-surface-container-highest py-1 rounded">
+<span class="block text-[10px] text-primary font-semibold">Q75</span>
+<span class="font-tabular-data text-[12px] font-bold text-primary">$1,450</span>
+</div>
+</div>
+</div>
+</div>
+<!-- High-Impact Editorial Summary Card -->
+<div class="bg-primary text-on-primary p-space-md rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 rounded-full bg-primary-container opacity-50 blur-xl"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-widest">Score Compuesto</span>
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">auto_graph</span>
+</div>
+<span class="font-tabular-data text-headline-lg font-bold text-on-primary">RFM 4-Tier</span>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim mt-1">
+            Segmentos combinados a partir de los cuantiles 1-4 asignados a cada cliente.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-primary-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-primary">Cálculo de Cohorte:</span>
+<span class="font-tabular-data text-tabular-data font-semibold text-primary-fixed">500 Clientes Activos</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Charts Row: Seaborn-Style Bar Distribution & Transition Heatmap -->
+<section class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Chart 1: sns.barplot Replication (Score Distribution) -->
+<div class="xl:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Distribución de Frecuencias de RFM Score</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">sns.barplot(x=rfm_level_counts.index, y=rfm_level_counts.values)</p>
+</div>
+<div class="inline-flex items-center gap-1 text-[11px] font-label-sm text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">
+<span>Escala: Clientes / Nivel</span>
+</div>
+</div>
+<!-- Bar Graph Canvas -->
+<div class="w-full pt-space-sm pb-space-xs">
+<div class="h-64 w-full flex items-end justify-between gap-2 sm:gap-3 px-1 relative">
+<!-- Background Gridlines -->
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none opacity-25">
+<div class="border-b border-outline-variant w-full"></div>
+<div class="border-b border-outline-variant w-full"></div>
+<div class="border-b border-outline-variant w-full"></div>
+<div class="border-b border-outline-variant w-full"></div>
+</div>
+<!-- Bar 1: Score 444 / Champions -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group relative z-10">
+<div class="opacity-0 group-hover:opacity-100 transition-opacity absolute -top-8 px-2 py-1 rounded bg-inverse-surface text-inverse-on-surface font-tabular-data text-[10px] pointer-events-none whitespace-nowrap shadow-md">
+              Score 444: 78 clientes
+            </div>
+<span class="font-tabular-data text-[11px] text-on-surface-variant font-semibold mb-1">78</span>
+<div class="w-full bg-gradient-to-t from-primary to-primary-container rounded-t-sm group-hover:brightness-110 transition-all" style="height: 78%;"></div>
+<span class="mt-2 font-tabular-data text-[11px] text-on-surface font-bold">444</span>
+</div>
+<!-- Bar 2: Score 434 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group relative z-10">
+<div class="opacity-0 group-hover:opacity-100 transition-opacity absolute -top-8 px-2 py-1 rounded bg-inverse-surface text-inverse-on-surface font-tabular-data text-[10px] pointer-events-none whitespace-nowrap shadow-md">
+              Score 434: 64 clientes
+            </div>
+<span class="font-tabular-data text-[11px] text-on-surface-variant font-semibold mb-1">64</span>
+<div class="w-full bg-gradient-to-t from-primary to-secondary-container rounded-t-sm group-hover:brightness-110 transition-all" style="height: 64%;"></div>
+<span class="mt-2 font-tabular-data text-[11px] text-on-surface font-bold">434</span>
+</div>
+<!-- Bar 3: Score 343 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group relative z-10">
+<div class="opacity-0 group-hover:opacity-100 transition-opacity absolute -top-8 px-2 py-1 rounded bg-inverse-surface text-inverse-on-surface font-tabular-data text-[10px] pointer-events-none whitespace-nowrap shadow-md">
+              Score 343: 52 clientes
+            </div>
+<span class="font-tabular-data text-[11px] text-on-surface-variant font-semibold mb-1">52</span>
+<div class="w-full bg-gradient-to-t from-tertiary-container to-secondary rounded-t-sm group-hover:brightness-110 transition-all" style="height: 52%;"></div>
+<span class="mt-2 font-tabular-data text-[11px] text-on-surface font-bold">343</span>
+</div>
+<!-- Bar 4: Score 333 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group relative z-10">
+<div class="opacity-0 group-hover:opacity-100 transition-opacity absolute -top-8 px-2 py-1 rounded bg-inverse-surface text-inverse-on-surface font-tabular-data text-[10px] pointer-events-none whitespace-nowrap shadow-md">
+              Score 333: 66 clientes
+            </div>
+<span class="font-tabular-data text-[11px] text-on-surface-variant font-semibold mb-1">66</span>
+<div class="w-full bg-gradient-to-t from-tertiary to-tertiary-container rounded-t-sm group-hover:brightness-110 transition-all" style="height: 66%;"></div>
+<span class="mt-2 font-tabular-data text-[11px] text-on-surface font-bold">333</span>
+</div>
+<!-- Bar 5: Score 232 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group relative z-10">
+<div class="opacity-0 group-hover:opacity-100 transition-opacity absolute -top-8 px-2 py-1 rounded bg-inverse-surface text-inverse-on-surface font-tabular-data text-[10px] pointer-events-none whitespace-nowrap shadow-md">
+              Score 232: 59 clientes
+            </div>
+<span class="font-tabular-data text-[11px] text-on-surface-variant font-semibold mb-1">59</span>
+<div class="w-full bg-gradient-to-t from-secondary-container to-primary-fixed-dim rounded-t-sm group-hover:brightness-110 transition-all" style="height: 59%;"></div>
+<span class="mt-2 font-tabular-data text-[11px] text-on-surface font-bold">232</span>
+</div>
+<!-- Bar 6: Score 221 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group relative z-10">
+<div class="opacity-0 group-hover:opacity-100 transition-opacity absolute -top-8 px-2 py-1 rounded bg-inverse-surface text-inverse-on-surface font-tabular-data text-[10px] pointer-events-none whitespace-nowrap shadow-md">
+              Score 221: 45 clientes
+            </div>
+<span class="font-tabular-data text-[11px] text-on-surface-variant font-semibold mb-1">45</span>
+<div class="w-full bg-gradient-to-t from-surface-tint to-secondary-fixed-dim rounded-t-sm group-hover:brightness-110 transition-all" style="height: 45%;"></div>
+<span class="mt-2 font-tabular-data text-[11px] text-on-surface font-bold">221</span>
+</div>
+<!-- Bar 7: Score 122 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group relative z-10">
+<div class="opacity-0 group-hover:opacity-100 transition-opacity absolute -top-8 px-2 py-1 rounded bg-inverse-surface text-inverse-on-surface font-tabular-data text-[10px] pointer-events-none whitespace-nowrap shadow-md">
+              Score 122: 41 clientes
+            </div>
+<span class="font-tabular-data text-[11px] text-on-surface-variant font-semibold mb-1">41</span>
+<div class="w-full bg-gradient-to-t from-surface-variant to-secondary-fixed rounded-t-sm group-hover:brightness-110 transition-all" style="height: 41%;"></div>
+<span class="mt-2 font-tabular-data text-[11px] text-on-surface font-bold">122</span>
+</div>
+<!-- Bar 8: Score 111 / Churn Critical -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group relative z-10">
+<div class="opacity-0 group-hover:opacity-100 transition-opacity absolute -top-8 px-2 py-1 rounded bg-inverse-surface text-inverse-on-surface font-tabular-data text-[10px] pointer-events-none whitespace-nowrap shadow-md">
+              Score 111: 74 clientes
+            </div>
+<span class="font-tabular-data text-[11px] text-on-surface-variant font-semibold mb-1">74</span>
+<div class="w-full bg-gradient-to-t from-outline-variant to-surface-container-highest rounded-t-sm group-hover:brightness-110 transition-all" style="height: 74%;"></div>
+<span class="mt-2 font-tabular-data text-[11px] text-on-surface font-bold">111</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t border-surface-container mt-space-sm text-[11px] font-label-sm text-on-surface-variant">
+<span>X: Tuplas RFM (Ordenadas de Alto a Bajo Rendimiento)</span>
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded bg-primary"></span>
+<span>Alto Valor</span>
+<span class="inline-block w-2.5 h-2.5 rounded bg-outline-variant ml-2"></span>
+<span>Bajo Rendimiento</span>
+</div>
+</div>
+</div>
+<!-- Chart 2: Matriz de Transición RFM Heatmap (Recency vs Frequency) -->
+<div class="xl:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">grid_4x4</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Matriz Heatmap RFM</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Recencia (Eje Y) vs Frecuencia (Eje X) con Promedios Monetarios</p>
+</div>
+</div>
+<!-- Heatmap Grid Matrix -->
+<div class="w-full my-auto">
+<div class="flex items-center justify-end mb-1 text-[10px] font-label-sm text-on-surface-variant">
+<span class="mr-4">Frecuencia (F1 → F4)</span>
+</div>
+<div class="grid grid-cols-5 gap-1.5 text-center items-center">
+<!-- Col headers -->
+<div class="text-[10px] font-label-sm text-on-surface-variant font-bold">R / F</div>
+<div class="text-[10px] font-label-sm text-on-surface-variant font-bold">F1 (1 tx)</div>
+<div class="text-[10px] font-label-sm text-on-surface-variant font-bold">F2 (2 tx)</div>
+<div class="text-[10px] font-label-sm text-on-surface-variant font-bold">F3 (3 tx)</div>
+<div class="text-[10px] font-label-sm text-on-surface-variant font-bold">F4 (≥4 tx)</div>
+<!-- Row 4 (Recency = 4, Highest Recency) -->
+<div class="text-[10px] font-label-sm text-on-surface-variant font-bold">R4 (&lt;15d)</div>
+<div class="p-2 rounded bg-surface-container flex flex-col justify-center transition-transform hover:scale-105">
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$390</span>
+<span class="text-[9px] text-on-surface-variant">32 cl</span>
+</div>
+<div class="p-2 rounded bg-secondary-fixed flex flex-col justify-center transition-transform hover:scale-105">
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$760</span>
+<span class="text-[9px] text-on-surface-variant">44 cl</span>
+</div>
+<div class="p-2 rounded bg-secondary-container text-on-secondary flex flex-col justify-center transition-transform hover:scale-105 shadow-sm">
+<span class="font-tabular-data text-[12px] font-bold text-on-secondary">$1,190</span>
+<span class="text-[9px] text-on-secondary-container">58 cl</span>
+</div>
+<div class="p-2 rounded bg-primary text-on-primary flex flex-col justify-center transition-transform hover:scale-105 shadow-md">
+<span class="font-tabular-data text-[12px] font-bold text-on-primary">$1,920</span>
+<span class="text-[9px] text-primary-fixed">64 cl</span>
+</div>
+<!-- Row 3 -->
+<div class="text-[10px] font-label-sm text-on-surface-variant font-bold">R3 (15-38d)</div>
+<div class="p-2 rounded bg-surface-container-low flex flex-col justify-center transition-transform hover:scale-105">
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$295</span>
+<span class="text-[9px] text-on-surface-variant">25 cl</span>
+</div>
+<div class="p-2 rounded bg-surface-variant flex flex-col justify-center transition-transform hover:scale-105">
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$610</span>
+<span class="text-[9px] text-on-surface-variant">39 cl</span>
+</div>
+<div class="p-2 rounded bg-secondary-fixed flex flex-col justify-center transition-transform hover:scale-105">
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$880</span>
+<span class="text-[9px] text-on-surface-variant">42 cl</span>
+</div>
+<div class="p-2 rounded bg-primary-container text-on-primary flex flex-col justify-center transition-transform hover:scale-105 shadow-sm">
+<span class="font-tabular-data text-[12px] font-bold text-on-primary">$1,480</span>
+<span class="text-[9px] text-on-primary-container">40 cl</span>
+</div>
+<!-- Row 2 -->
+<div class="text-[10px] font-label-sm text-on-surface-variant font-bold">R2 (38-72d)</div>
+<div class="p-2 rounded bg-surface-container-lowest shadow-[inset_0_0_0_1px_rgba(224,190,196,0.5)] flex flex-col justify-center transition-transform hover:scale-105">
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$180</span>
+<span class="text-[9px] text-on-surface-variant">20 cl</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low flex flex-col justify-center transition-transform hover:scale-105">
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$340</span>
+<span class="text-[9px] text-on-surface-variant">31 cl</span>
+</div>
+<div class="p-2 rounded bg-surface-variant flex flex-col justify-center transition-transform hover:scale-105">
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$590</span>
+<span class="text-[9px] text-on-surface-variant">28 cl</span>
+</div>
+<div class="p-2 rounded bg-secondary-fixed flex flex-col justify-center transition-transform hover:scale-105">
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$810</span>
+<span class="text-[9px] text-on-surface-variant">21 cl</span>
+</div>
+<!-- Row 1 (Recency = 1, Churn Risk) -->
+<div class="text-[10px] font-label-sm text-on-surface-variant font-bold">R1 (&gt;72d)</div>
+<div class="p-2 rounded bg-surface-container flex flex-col justify-center transition-transform hover:scale-105">
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$120</span>
+<span class="text-[9px] text-on-surface-variant">42 cl</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex flex-col justify-center transition-transform hover:scale-105">
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$215</span>
+<span class="text-[9px] text-on-surface-variant">29 cl</span>
+</div>
+<div class="p-2 rounded bg-surface-container-high flex flex-col justify-center transition-transform hover:scale-105">
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$370</span>
+<span class="text-[9px] text-on-surface-variant">19 cl</span>
+</div>
+<div class="p-2 rounded bg-surface-variant flex flex-col justify-center transition-transform hover:scale-105">
+<span class="font-tabular-data text-[12px] font-bold text-on-surface">$520</span>
+<span class="text-[9px] text-on-surface-variant">25 cl</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-[11px] font-body-sm text-on-surface-variant border-t border-surface-container">
+<span>Celdas: Ticket Promedio ($) y Conteo</span>
+<span class="text-primary font-label-sm font-semibold">Max: $1,920 (R4/F4)</span>
+</div>
+</div>
+</section>
+<!-- Section 3: Segments Breakdown & Marketing Strategies -->
+<section class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- Interactive Segment Breakdown Table -->
+<div class="xl:col-span-8 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-lg pb-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Desglose Operativo por Segmentos RFM</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cuadro sintetizado de volumen de clientes y valor monetario unitario.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">
+            Filtrar Clientes
+          </button>
+</div>
+</div>
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<th class="py-3 px-space-md">Segmento Asignado</th>
+<th class="py-3 px-space-md">Perfil de Score</th>
+<th class="py-3 px-space-md">Clientes</th>
+<th class="py-3 px-space-md">% Base</th>
+<th class="py-3 px-space-md">Ticket Promedio</th>
+<th class="py-3 px-space-md text-right">Acción Rápida</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-md text-body-md text-on-surface">
+<!-- Row 1: Champions -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Champions / Big Spenders</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-[11px] font-bold">
+                  RFM 4-4-4 / 4-3-4
+                </span>
+</td>
+<td class="py-3 px-space-md font-tabular-data text-tabular-data font-bold">142</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary h-full" style="width: 28.4%"></div>
+</div>
+<span class="font-tabular-data text-[12px] text-on-surface-variant">28.4%</span>
+</div>
+</td>
+<td class="py-3 px-space-md font-tabular-data text-tabular-data font-bold text-primary">$1,680.00</td>
+<td class="py-3 px-space-md text-right">
+<button class="px-2.5 py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-[11px] hover:bg-primary-fixed-dim transition-colors" type="button">
+                  Ver 142 IDs
+                </button>
+</td>
+</tr>
+<!-- Row 2: Recent Customers -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Recent Customers</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-[11px]">
+                  R Alto / F Medio
+                </span>
+</td>
+<td class="py-3 px-space-md font-tabular-data text-tabular-data font-bold">118</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-secondary h-full" style="width: 23.6%"></div>
+</div>
+<span class="font-tabular-data text-[12px] text-on-surface-variant">23.6%</span>
+</div>
+</td>
+<td class="py-3 px-space-md font-tabular-data text-tabular-data font-bold text-secondary">$720.00</td>
+<td class="py-3 px-space-md text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-[11px] hover:bg-surface-container-high transition-colors" type="button">
+                  Ver 118 IDs
+                </button>
+</td>
+</tr>
+<!-- Row 3: Frequent Low Spenders -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Frequent Low Spenders</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-[11px]">
+                  F Alto / M Bajo
+                </span>
+</td>
+<td class="py-3 px-space-md font-tabular-data text-tabular-data font-bold">125</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-tertiary h-full" style="width: 25.0%"></div>
+</div>
+<span class="font-tabular-data text-[12px] text-on-surface-variant">25.0%</span>
+</div>
+</td>
+<td class="py-3 px-space-md font-tabular-data text-tabular-data font-bold text-tertiary">$410.00</td>
+<td class="py-3 px-space-md text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-[11px] hover:bg-surface-container-high transition-colors" type="button">
+                  Ver 125 IDs
+                </button>
+</td>
+</tr>
+<!-- Row 4: At Risk / Churn Warning -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-title-md text-title-md font-bold text-error">At Risk / Churn Warning</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[11px]">
+                  R Bajo (&gt;72d)
+                </span>
+</td>
+<td class="py-3 px-space-md font-tabular-data text-tabular-data font-bold">115</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-error h-full" style="width: 23.0%"></div>
+</div>
+<span class="font-tabular-data text-[12px] text-on-surface-variant">23.0%</span>
+</div>
+</td>
+<td class="py-3 px-space-md font-tabular-data text-tabular-data font-bold text-error">$290.00</td>
+<td class="py-3 px-space-md text-right">
+<button class="px-2.5 py-1 rounded bg-error-container text-on-error-container font-label-sm text-[11px] hover:opacity-90 transition-colors" type="button">
+                  Ver 115 IDs
+                </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-md bg-surface-container-low/40 flex items-center justify-between text-[12px] font-body-sm text-on-surface-variant">
+<span>Total registros validados en cálculo: 500 compradores únicos</span>
+<span class="font-semibold text-primary">Incertidumbre cuantílica: ±0.0%</span>
+</div>
+</div>
+<!-- Recommendations & Marketing Actions -->
+<div class="xl:col-span-4 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">rocket_launch</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Estrategias de Activación</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Reglas automatizadas sugeridas para disparadores de CRM según el cuadrante actual.
+        </p>
+<div class="space-y-space-sm">
+<!-- Action 1: Champions -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary">Para: Champions / Big Spenders</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary text-on-primary">VIP Tier</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Lanzar programa de acceso anticipado y recompensas exclusivas sin descuentos agresivos.</p>
+<div class="mt-1 flex items-center gap-1 text-[11px] text-on-surface-variant font-semibold">
+<span class="material-symbols-outlined text-[14px] text-primary">send</span>
+<span>Campaña: Email Concierge VIP</span>
+</div>
+</div>
+<!-- Action 2: Recent Customers -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-secondary">Para: Recent Customers</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary text-on-secondary">Onboarding</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Acelerar la segunda compra antes de llegar al umbral de 38 días con recomendaciones complementarias.</p>
+<div class="mt-1 flex items-center gap-1 text-[11px] text-on-surface-variant font-semibold">
+<span class="material-symbols-outlined text-[14px] text-secondary">alt_route</span>
+<span>Campaña: Cross-Sell Secuencial</span>
+</div>
+</div>
+<!-- Action 3: Churn Risk -->
+<div class="p-space-sm rounded-lg bg-surface-container-high flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-error">Para: Churn Warning</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-error text-on-error">Recuperación</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Disparar cupón de reactivación con fecha límite estricta (15% de descuento por 7 días).</p>
+<div class="mt-1 flex items-center gap-1 text-[11px] text-on-surface-variant font-semibold">
+<span class="material-symbols-outlined text-[14px] text-error">mail</span>
+<span>Campaña: "Te Extrañamos" + Bono</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-label-sm text-[11px] text-on-surface-variant">Sincronización Klaviyo/Braze:</span>
+<button class="inline-flex items-center gap-1 text-primary font-label-sm text-label-sm hover:underline" type="button">
+<span>Ejecutar Triggers</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive script for Quantiles toggle & Bar interactions -->
+<script>
+    document.querySelectorAll('[data-path="analisis-rfm"]').forEach(el => {
+      el.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold', 'rounded-lg', 'shadow-sm');
+      el.classList.remove('text-on-surface-variant');
+    });
+  </script>
+</div></main></div></body></html>
